@@ -187,10 +187,16 @@ class _HomePageState extends State<HomePage> {
                 ...List.generate(
                   categoryList.length,
                   (index) => SingleChildScrollView(
-                    child: buildContainer(
-                        categoryList[index]['img'],
-                        categoryList[index]['quote'],
-                        categoryList[index]['category']),
+                    child: GestureDetector(onTap: (){
+
+                      Navigator.of(context).pushNamed('/edit');
+
+                    },
+                      child: buildContainer(
+                          categoryList[index]['img'],
+                          categoryList[index]['quote'],
+                          categoryList[index]['category']),
+                    ),
                   ),
                 ),
 
