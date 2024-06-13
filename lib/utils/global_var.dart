@@ -286,31 +286,19 @@ List imgTheme = [
     'img': 'assets/img/8.jpg',
   },
   {
-    'img': 'assets/img/11.jpg',
-  },
-  {
-    'img': 'assets/img/10.jpg',
-  },
-  {
     'img': 'assets/img/9.jpg',
   },
   {
-    'img': 'asses/img/13.jpg',
+    'img': 'assets/img/11.jpg',
   },
   {
     'img': 'assets/img/12.jpg',
   },
   {
-    'img': 'assets/img/20.jpg',
+    'img': 'asses/img/13.jpg',
   },
   {
-    'img': 'assets/img/13.jpg',
-  },
-  {
-    'img': 'asses/img/21.jpg',
-  },
-  {
-    'img': 'assets/img/22.jpg',
+    'img': 'assets/img/14.jpg',
   },
   {
     'img': 'assets/img/19.jpg',
@@ -322,10 +310,22 @@ List imgTheme = [
     'img': 'asses/img/21.jpg',
   },
   {
-    'img': 'assets/img/11.jpg',
+    'img': 'assets/img/22.jpg',
   },
   {
-    'img': 'assets/img/13.jpg',
+    'img': 'assets/img/23.jpg',
+  },
+  {
+    'img': 'assets/img/24.jpg',
+  },
+  {
+    'img': 'asses/img/25.jpeg',
+  },
+  {
+    'img': 'assets/img/33.jpg',
+  },
+  {
+    'img': 'assets/img/39.jpg',
   },
   {
     'img': 'assets/img/9.jpg',
@@ -337,7 +337,7 @@ List imgTheme = [
     'img': 'assets/img/11.jpg',
   },
   {
-    'img': 'assets/img/10.jpg',
+    'img': 'assets/img/7.jpg',
   },
   {
     'img': 'assets/img/9.jpg',
