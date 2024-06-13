@@ -85,6 +85,7 @@ class _HomePageState extends State<HomePage> {
                         onTap: () {
                           setState(() {
                             selectedIndex = index;
+                            Navigator.of(context).pushNamed('/edit');
                           });
                         },
                         child: buildListTile(

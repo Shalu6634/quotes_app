@@ -16,46 +16,52 @@ List categoryList = [
         "Life isn’t about getting and having, it’s about giving and being.",
     "author": "Kevin Kruse",
     'category': 'Success quotes',
-    'img': 'assets/img/9.jpg'
+    'img': 'assets/img/14.jpg'
   },
   {
     "quote":
         "Life isn’t about getting and having, it’s about giving and being.",
     "author": "Kevin Kruse",
     'category': 'motivational',
-    'img': 'assets/img/4.jpg'
+    'img': 'assets/img/20.jpg'
   },
   {
     "quote":
         "Whatever the mind of man can conceive and believe, it can achieve.",
     "author": "Napoleon Hill",
     'category': 'Sad quotes',
-    'img': 'assets/img/11.jpg'
+    'img': 'assets/img/13.jpg'
   },
   {
     "quote": "Strive not to be a success, but rather to be of value.",
     "author": "Albert Einstein",
     'category': 'Love quotes',
-    'img': 'assets/img/2.jpg'
+    'img': 'assets/img/5.jpg'
   },
   {
     "quote":
         "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
     "author": "Robert Frost",
     'category': 'Inspirational',
-    'img': 'assets/img/13.jpg'
+    'img': 'assets/img/21.jpg'
   },
   {
     "quote": "I attribute my success to this: I never gave or took any excuse.",
     "author": "Florence Nightingale",
     'category': 'Sports quotes',
-    'img': 'assets/img/3.jpg'
+    'img': 'assets/img/23.jpg'
   },
   {
     "quote": "You miss 100% of the shots you don’t take.",
     "author": "Wayne Gretzky",
-    'category': 'flowers quotes',
-    'img': 'assets/img/7.jpg'
+    'category': 'friendShip quotes',
+    'img': 'assets/img/22.jpg'
+  },
+  {
+    "quote": "You miss 100% of the shots you don’t take.",
+    "author": "Wayne Gretzky",
+    'category': 'happiness',
+    'img': 'assets/img/19.jpg'
   },
 ];
 
@@ -262,33 +268,81 @@ List imgTheme = [
     'img': 'assets/img/1.jpg',
   },
   {
-    'img': 'assets/img/1.jpg',
-  },
-  {
-    'img': 'assets/img/1.jpg',
-  },
-  {
-    'img': 'assets/img/1.jpg',
-  },
-  {
-    'img': 'assets/img/1.jpg',
-  },
-  {
     'img': 'assets/img/2.jpg',
   },
   {
-    'img': 'assets/img/2.jpg',
+    'img': 'assets/img/3.jpg',
   },
   {
-    'img': 'assets/img/2.jpg',
+    'img': 'assets/img/4.jpg',
   },
   {
-    'img': 'assets/img/2.jpg',
+    'img': 'assets/img/5.jpg',
   },
   {
-    'img': 'assets/img/2.jpg',
+    'img': 'assets/img/7.jpg',
   },
   {
-    'img': 'asses/img/3.jpg',
+    'img': 'assets/img/8.jpg',
+  },
+  {
+    'img': 'assets/img/11.jpg',
+  },
+  {
+    'img': 'assets/img/10.jpg',
+  },
+  {
+    'img': 'assets/img/9.jpg',
+  },
+  {
+    'img': 'asses/img/13.jpg',
+  },
+  {
+    'img': 'assets/img/12.jpg',
+  },
+  {
+    'img': 'assets/img/20.jpg',
+  },
+  {
+    'img': 'assets/img/13.jpg',
+  },
+  {
+    'img': 'asses/img/21.jpg',
+  },
+  {
+    'img': 'assets/img/22.jpg',
+  },
+  {
+    'img': 'assets/img/19.jpg',
+  },
+  {
+    'img': 'assets/img/20.jpg',
+  },
+  {
+    'img': 'asses/img/21.jpg',
+  },
+  {
+    'img': 'assets/img/11.jpg',
+  },
+  {
+    'img': 'assets/img/13.jpg',
+  },
+  {
+    'img': 'assets/img/9.jpg',
+  },
+  {
+    'img': 'asses/img/25.jpeg',
+  },
+  {
+    'img': 'assets/img/11.jpg',
+  },
+  {
+    'img': 'assets/img/10.jpg',
+  },
+  {
+    'img': 'assets/img/9.jpg',
+  },
+  {
+    'img': 'asses/img/24.jpg',
   },
 ];

@@ -13,24 +13,32 @@ class _EditScreenState extends State<EditScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Wrap(
-        children: [
-          ...List.generate(imgTheme.length, (index) => buildContainer(img: imgTheme[selectedIndex]['img']))
-        ],
+      body: SingleChildScrollView(
+        child: Wrap(
+          children: [
+            ...List.generate(
+              imgTheme.length,
+              (index) => buildContainer(imgTheme[index]['img'],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
-  Container buildContainer({required String img}) {
+  Container buildContainer( String img) {
     return Container(
-      height: 200,
-      width: 200,
+      height: 150,
+      width: 110,
+      margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.blue,width: 1),
+        border: Border.all(color: Colors.blue, width: 1),
         color: Colors.blue,
         image: DecorationImage(
+          fit: BoxFit.cover,
           image: AssetImage(img),
-        ),
+        )
       ),
     );
   }

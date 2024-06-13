@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app/screen/home/splashScreeen.dart';
-import '../screen/home/EditPage/success.dart';
+import '../screen/home/EditPage/editPage.dart';
 import '../screen/home/firstPage.dart';
 
 class AppRoutes
