@@ -9,23 +9,30 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+String quotes = '';
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          'Motivational',
+          'quotes of the day',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(15),
+            child: GestureDetector(onTap: (){
+              Navigator.of(context).pushNamed('/save');
+            },child: Icon(Icons.save)),
+          )
+        ],
         elevation: 50,
         centerTitle: true,
-        actions: [
-          ActionChip(
-            label: Text(''),
-          ),
-        ],
+
       ),
       drawer: Drawer(
         child: Column(
@@ -80,17 +87,9 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   ...List.generate(
-                    iconList.length,
-                    (index) => GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            selectedIndex = index;
-                            Navigator.of(context).pushNamed('/edit');
-                          });
-                        },
-                        child: buildListTile(
-                            textList[index], iconList[index], index)),
-                  ),
+                      iconList.length,
+                      (index) => buildListTile(
+                          textList[index], iconList[index], index)),
                 ],
               ),
             ),
@@ -128,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                       width: 100,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               image: AssetImage('assets/img/7.jpg')),
                           border: Border.all(color: Colors.blue, width: 2),
                           shape: BoxShape.circle,
@@ -142,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                       width: 100,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               image: AssetImage('assets/img/2.jpg')),
                           border: Border.all(color: Colors.blue, width: 2),
                           shape: BoxShape.circle,
@@ -156,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                       width: 100,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               image: AssetImage('assets/img/3.jpg')),
                           border: Border.all(color: Colors.blue, width: 2),
                           shape: BoxShape.circle,
@@ -168,7 +167,7 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 30),
             Container(
-              height: 150,
+              height: 200,
               width: 340,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -186,52 +185,47 @@ class _HomePageState extends State<HomePage> {
             Wrap(
               children: [
                 ...List.generate(
-                  categoryList.length,
-                  (index) => SingleChildScrollView(
-                    child: GestureDetector(onTap: (){
-
+                  bgImg.length,
+                  (index) => GestureDetector(
+                    onTap: () {
+                      setState(() {
+                      selectedIndex = index;
+                      // quotes = categoryList[index]['name']!;
+                      // quotes1 = categoryList[selectedIndex][index]['quote'];
+                      // quotes2 = categoryList[selectedIndex][index]['author'];
+                    });
                       Navigator.of(context).pushNamed('/edit');
 
                     },
-                      child: buildContainer(
-                          categoryList[index]['img'],
-                          categoryList[index]['quote'],
-                          categoryList[index]['category']),
-                    ),
+                    child:
+                    Stack(
+                        children: [
+                      Container(
+                        height: 130,
+                        width: 110,
+                        margin: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(color: Colors.white, width: 1),
+                            image: DecorationImage(fit: BoxFit.cover, image: AssetImage(bgImg[index]['img'])),
+                            color: Colors.white),
+                        child:  Padding(
+                          padding: const EdgeInsets.only(top: 100,left: 8),
+                          child: Text(
+                              category[index]['name']!,
+                              style: TextStyle(color: Colors.white, fontSize: 17,fontWeight: FontWeight.bold),
+                            ),
+                        ),
+                      ),
+                    ]),
                   ),
                 ),
-
               ],
             ),
           ],
         ),
       ),
     );
-  }
-
-  Widget buildContainer(String img, String quote, String category) {
-    return Stack(children: [
-      Container(
-        height: 130,
-        width: 110,
-        margin: EdgeInsets.all(5),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: Colors.white,width: 1),
-            image: DecorationImage(fit: BoxFit.cover, image: AssetImage(img)),
-            color: Colors.white),
-        child: Center(
-          child: Text(
-            quote,
-            style: TextStyle(color: Colors.white, fontSize: 8),
-          ),
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.only(top: 150,left: 10),
-        child: Text(category,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 13),),
-      ),
-    ]);
   }
 
   Widget buildListTile(
@@ -253,3 +247,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+// int index = 0;

@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 5), () {
-      Navigator.of(context).pushNamed('/h');
+      Navigator.of(context).pushNamed('/q');
     });
     return Scaffold(
       backgroundColor: Colors.black,
