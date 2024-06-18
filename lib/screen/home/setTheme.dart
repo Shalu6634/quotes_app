@@ -12,13 +12,14 @@ import 'package:quotes_app/screen/home/saveScreen.dart';
 import 'package:quotes_app/utils/quotesAllList/quotesList.dart';
 import 'package:share_extend/share_extend.dart';
 
-import '../../utils/global_var.dart';
+// import '../../utils/global_var.dart';
 import 'EditPage/editPage.dart';
 
 QuoteModel? quoteModel;
 
 class SetTheme extends StatefulWidget {
   const SetTheme({super.key});
+
 
   @override
   State<SetTheme> createState() => _SetThemeState();
